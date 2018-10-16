@@ -3,22 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package caso4;
+package Caso4_Composite;
 
 /**
  *
  * @author Gerardo Villalobos
  */
-public class Constante implements Expresion {
+public class Restador extends ExpresionB {
 
-    double value;
-
-    public Constante(double value) {
-        this.value = value;
+    public Restador(Expresion left, Expresion right) {
+        super(left, right);
     }
 
     @Override
     public double calculate() {
-        return value;
+        return left.calculate() - right.calculate();
     }
 }

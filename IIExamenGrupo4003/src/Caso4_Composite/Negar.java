@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package caso4;
+package Caso4_Composite;
 
 /**
  *
  * @author Gerardo Villalobos
  */
-public class Restador extends ExpresionB {
+public class Negar extends ExpresionU {
 
-    public Restador(Expresion left, Expresion right) {
-        super(left, right);
+    public Negar(Expresion right) {
+        super(right);
     }
 
     @Override
     public double calculate() {
-        return left.calculate() - right.calculate();
+        return -right.calculate();
     }
 }

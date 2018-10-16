@@ -3,16 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package caso4;
+package Caso4_Composite;
 
 /**
  *
  * @author Gerardo Villalobos
  */
-public abstract class ExpresionU implements Expresion {
-    protected Expresion right;
+public class Constante implements Expresion {
 
-    public ExpresionU(Expresion right) {
-        this.right = right;
+    double value;
+
+    public Constante(double value) {
+        this.value = value;
+    }
+
+    @Override
+    public double calculate() {
+        return value;
     }
 }

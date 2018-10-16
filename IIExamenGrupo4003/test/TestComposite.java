@@ -4,9 +4,13 @@
  * and open the template in the editor.
  */
 
+import Caso4_Composite.Constante;
+import Caso4_Composite.Restador;
+import Caso4_Composite.Expresion;
+import Caso4_Composite.Sumador;
+import Caso4_Composite.Multiplicador;
 import org.junit.Test;
 
-import caso4.*;
 
 import static org.junit.Assert.assertEquals;
 

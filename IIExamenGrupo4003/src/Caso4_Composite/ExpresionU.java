@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package caso4;
+package Caso4_Composite;
 
 /**
  *
  * @author Gerardo Villalobos
  */
-public abstract class ExpresionB extends ExpresionU {
+public abstract class ExpresionU implements Expresion {
+    protected Expresion right;
 
-    protected Expresion left;
-
-    public ExpresionB(Expresion left, Expresion right) {
-        super(right);
-        this.left = left;
+    public ExpresionU(Expresion right) {
+        this.right = right;
     }
 }
